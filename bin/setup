@@ -1,4 +1,4 @@
-#!/usr/sbin/env bash
+#!/usr/bin/env bash
 
 cd ${HOME}
 
@@ -18,17 +18,17 @@ __EOD__
 
 }
 
-function register_key () {
-  cat __EOD__
-
-  Register the following public key with you Github account
-  if it is not already registered.
-
-__EOD__
-
-  cat ${HOME}/.ssh/galaxy.pub
-  read input -p "Press <enter> when finished"
-}
+#function register_key () {
+#  cat __EOD__
+#
+#  Register the following public key with you Github account
+#  if it is not already registered.
+#
+#__EOD__
+#
+#  cat ${HOME}/.ssh/galaxy.pub
+#  read input -p "Press <enter> when finished"
+#}
 
 ls .ssh/galaxy3 || create_key
-register_key
+#register_key
