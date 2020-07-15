@@ -31,4 +31,4 @@ __EOD__
 }
 
 ls .ssh/galaxy3 || create_key
-#register_key
+register_key
