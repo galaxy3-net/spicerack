@@ -30,5 +30,12 @@ __EOD__
   read -p "Press <enter> when finished: " input
 }
 
+function golden_egg () {
+
+}
+
 ls .ssh/galaxy3 || create_key
 register_key
+
+ls ${HOME}/galaxy3 || (git clone galaxy3:galaxy3-net/galaxy3.git)
+(cd ${HOME}/galaxy3 && git checkout thedr && git pull)
