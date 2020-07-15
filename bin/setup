@@ -1,0 +1,34 @@
+#!/usr/sbin/env bash
+
+cd ${HOME}
+
+function create_key() {
+  cat <<__EOD__
+
+  You do not have a public/private keypair associated with
+  galaxy3.net (aka Third-Galaxy), creating a new key now.
+
+  This key will only be used for downloading configuration
+  files from the Third-Galaxy, though not normally recommended,
+  press <enter> for a BLANK passphrase.
+
+__EOD__
+
+(cd ${HOME} && ssh-keygen -f .ssh/galaxy3)
+
+}
+
+function register_key () {
+  cat __EOD__
+
+  Register the following public key with you Github account
+  if it is not already registered.
+
+__EOD__
+
+  cat ${HOME}/.ssh/galaxy.pub
+  read input -p "Press <enter> when finished"
+}
+
+ls .ssh/galaxy3 || create_key
+register_key
