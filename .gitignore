@@ -16,3 +16,14 @@
 spicerack.iml
 .idea/
 eggs/
+.ssh/bespin
+.ssh/blueprints
+.ssh/egg
+.ssh/endor
+.ssh/kamino
+.ssh/naboo
+.ssh/nakadia
+.ssh/named
+.ssh/quarren
+.ssh/tattooine
+.ssh/ucibox
