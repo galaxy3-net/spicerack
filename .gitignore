@@ -27,3 +27,4 @@ eggs/
 .ssh/quarren
 .ssh/tattooine
 .ssh/ucibox
+.ssh/config
